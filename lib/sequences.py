@@ -16,11 +16,12 @@ def print_fibonacci(length):
         # initialize fibonacciSeries with [0, 1]
         fibonacciSeries = [0, 1]
 
+        # execute as long as end has not been reached
         while len(fibonacciSeries) < length:
             # nextNumber is as result of adding lastTwoNumbers
             nextNumber = fibonacciSeries[-1] + fibonacciSeries[-2]
 
-            # add to list
+            # add to end of list
             fibonacciSeries.append(nextNumber)
 
     print(fibonacciSeries)
