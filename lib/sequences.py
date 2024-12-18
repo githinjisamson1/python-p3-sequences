@@ -2,29 +2,19 @@
 
 
 def print_fibonacci(length):
-
     if length == 0:
-        fibonacciSeries = []
-
+        fibonacci_series = []
     elif length == 1:
-        fibonacciSeries = [0]
-
-    elif length == 2:
-        fibonacciSeries = [0, 1]
-
+        fibonacci_series = [0]
     else:
-        # initialize fibonacciSeries with [0, 1]
-        fibonacciSeries = [0, 1]
-
-        # execute as long as end has not been reached
-        while len(fibonacciSeries) < length:
-            # nextNumber is as result of adding lastTwoNumbers
-            nextNumber = fibonacciSeries[-1] + fibonacciSeries[-2]
-
-            # add to end of list
-            fibonacciSeries.append(nextNumber)
-
-    print(fibonacciSeries)
+        # initialize fibonacci
+        fibonacci_series=[0, 1]
+        
+        # as long as end is not reached
+        while len(fibonacci_series) < length:
+            next_number = fibonacci_series[-1] + fibonacci_series[-2]
+            fibonacci_series.append(next_number)
+    
+    print(fibonacci_series)
 
 
-# print_fibonacci(9)
